@@ -1,0 +1,465 @@
+{
+    "fase0" : {
+        "id": 0,
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -200,
+                "positionY" : -38,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 720,
+                "positionY" : 400,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    },
+    "fase1" : {
+        "id": 1,
+        "obstacles" : {
+            "ob1" : {
+                "positionX" : 240,
+                "positionY" : -27,
+                "width" : 400,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 90
+            },
+            "ob2" : {
+                "positionX" : 240,
+                "positionY" : 630,
+                "width" : 1024,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 0
+            }
+        },
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -160,
+                "positionY" : -100,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 640,
+                "positionY" : -100,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    },
+    "fase2" : {
+        "id": 2,
+        "obstacles" : {
+            "ob1" : {
+                "positionX" : 281,
+                "positionY" : 362,
+                "width" : 520,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : -90
+            },
+            "ob2" : {
+                "positionX" : 281,
+                "positionY" : -203,
+                "width" : 700,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 180
+            }
+        },
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -364,
+                "positionY" : 154,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 1000,
+                "positionY" : 50,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    },
+    "fase3" : {
+        "id": 3,
+        "obstacles" : {
+            "ob1" : {
+                "positionX" : 40,
+                "positionY" : 480,
+                "width" : 500,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : -100
+            },
+            "ob2" : {
+                "positionX" : 500,
+                "positionY" : 140,
+                "width" : 500,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : -100
+            }
+        },
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -325,
+                "positionY" : -100,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 900,
+                "positionY" : 416,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    },
+    "fase4" : {
+        "id": 4,
+        "obstacles" : {
+            "ob1" : {
+                "positionX" : -162,
+                "positionY" : 574,
+                "width" : 470,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 0
+            },
+            "ob2" : {
+                "positionX" : 385,
+                "positionY" : 574,
+                "width" : 470,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 0
+            },
+            "ob3" : {
+                "positionX" : 320,
+                "positionY" : 30,
+                "width" : 180,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : -90
+            },
+            "ob4" : {
+                "positionX" : 93,
+                "positionY" : -88,
+                "width" : 400,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 0
+            },
+            "ob5" : {
+                "positionX" : 548,
+                "positionY" : -88,
+                "width" : 400,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 0
+            },
+            "ob6" : {
+                "positionX" : 917,
+                "positionY" : 574,
+                "width" : 470,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 0
+            }
+        },
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -391,
+                "positionY" : -88,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 990,
+                "positionY" : -88,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    },
+    "fase5" : {
+        "id": 5,
+        "obstacles" : {
+            "ob1" : {
+                "positionX" : 300,
+                "positionY" : 200,
+                "width" : 400,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": true,
+                "angle" : -42,
+                "velocityRotation" : 0.7,
+                "speed" : 0,
+                "distanceX" : 0,
+                "distanceY" : 0
+            }
+        },
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -300,
+                "positionY" : -100,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 850,
+                "positionY" : 400,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    },
+    "fase6" : {
+        "id": 6,
+        "obstacles" : {
+            "ob1" : {
+                "positionX" : 100,
+                "positionY" : 204,
+                "width" : 210,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": true,
+                "angle" : -57,
+                "speed" : 3,
+                "distanceX" : -150,
+                "distanceY" : 300,
+                "velocityRotation" : 0
+            },
+            "ob2" : {
+                "positionX" : 630,
+                "positionY" : 253,
+                "width" : 210,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": true,
+                "angle" : -57,
+                "speed" : 3,
+                "distanceX" : 150,
+                "distanceY" : -300,
+                "velocityRotation" : 0
+            }
+        },
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -371,
+                "positionY" : -88,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 1010,
+                "positionY" : 350,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    },
+    "fase7" : {
+        "id": 7,
+        "obstacles" : {
+            "ob1" : {
+                "positionX" : 240,
+                "positionY" : 590,
+                "width" : 1024,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 0
+            },
+            "ob2" : {
+                "positionX" : -40,
+                "positionY" : 350,
+                "width" : 360,
+                "height" : 54,
+                "color" : "purple",
+                "isMoving": false,
+                "angle" : -42
+            },
+            "ob3" : {
+                "positionX" : 280,
+                "positionY" : 0,
+                "width" : 400,
+                "height" : 54,
+                "color" : "green",
+                "isMoving": false,
+                "angle" : -90
+            }
+        },
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -325,
+                "positionY" : -100,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 810,
+                "positionY" : -100,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    },
+    "fase8" : {
+        "id": 8,
+        "obstacles" : {
+            "ob1" : {
+                "positionX" : -235,
+                "positionY" : 497,
+                "width" : 342,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 10
+            },
+            "ob2" : {
+                "positionX" : 330,
+                "positionY" : 173,
+                "width" : 342,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : -20
+            },
+            "ob3" : {
+                "positionX" : 241,
+                "positionY" : 690,
+                "width" : 454,
+                "height" : 54,
+                "color" : "purple",
+                "isMoving": false,
+                "angle" : 0
+            },
+            "ob4" : {
+                "positionX" : 400,
+                "positionY" : -171,
+                "width" : 634,
+                "height" : 54,
+                "color" : "green",
+                "isMoving": false,
+                "angle" : 0
+            }
+        },
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -384,
+                "positionY" : -100,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 976,
+                "positionY" : 73,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    },
+    "fase9" : {
+        "id": 9,
+        "obstacles" : {
+            "ob1" : {
+                "positionX" : -354,
+                "positionY" : 474,
+                "width" : 400,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : -112
+            },
+            "ob2" : {
+                "positionX" : 9,
+                "positionY" : 98,
+                "width" : 400,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : -116
+            },
+            "ob3" : {
+                "positionX" : 65,
+                "positionY" : 677,
+                "width" : 400,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 0
+            },
+            "ob4" : {
+                "positionX" : 471,
+                "positionY" : 526,
+                "width" : 400,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : -46
+            },
+            "ob5" : {
+                "positionX" : 374,
+                "positionY" : 38,
+                "width" : 400,
+                "height" : 54,
+                "color" : "orange",
+                "isMoving": false,
+                "angle" : 150
+            }
+        },
+        "plataforms" : {
+            "plat1" : {
+                "positionX" : -352,
+                "positionY" : -113,
+                "width" : 400,
+                "height" : 54,
+                "angle" : 0
+            },
+            "plat2" : {
+                "positionX" : 957,
+                "positionY" : 200,
+                "width" : 300,
+                "height" : 54,
+                "angle" : 0
+            }
+        }
+    }
+}
