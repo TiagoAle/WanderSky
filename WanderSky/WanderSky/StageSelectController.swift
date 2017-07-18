@@ -15,24 +15,24 @@ class StageSelectController: UICollectionViewController{
     override func viewDidLoad() {
 
         //Adicionando o Blur
-        let blurEffect = UIBlurEffect(style: .light)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        //Alpha do Blur
-        blurEffectView.alpha = 0.95
-        blurEffectView.frame = (self.collectionView?.bounds)!
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        
-        //Background Menu
-        let imageMenu = UIImageView(image: UIImage.init(named: "BG00Menu"))
-        
-        //Ariel Background
-        let imageArielMenu = UIImageView.init(frame: CGRect(x: -480, y: 0, width: 1570, height: 1080))
-         imageArielMenu.image = UIImage(named: "BGMenu")
-
-        imageMenu.addSubview(imageArielMenu)
-        imageMenu.addSubview(blurEffectView)
-        
-        self.collectionView?.backgroundView = imageMenu
+//        let blurEffect = UIBlurEffect(style: .light)
+//        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+//        //Alpha do Blur
+//        blurEffectView.alpha = 0.5
+//        blurEffectView.frame = (self.collectionView?.bounds)!
+//        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        
+//        //Background Menu
+//        let imageMenu = UIImageView(image: UIImage.init(named: "BG00Menu"))
+//        
+//        //Ariel Background
+//        let imageArielMenu = UIImageView.init(frame: CGRect(x: -480, y: 0, width: 1570, height: 1080))
+//         imageArielMenu.image = UIImage(named: "BGMenu")
+//
+//        imageMenu.addSubview(imageArielMenu)
+//        imageMenu.addSubview(blurEffectView)
+//        
+//        self.collectionView?.backgroundView = imageMenu
         self.stars = GameLoadManager.readJsonStars()
         
         //let indexPath = IndexPath.init(item: MenuController.loadPlayerStageInNSUserDefault()+1, section: 0)
@@ -112,7 +112,7 @@ class StageSelectController: UICollectionViewController{
        
         if indexPath.item <= higherStage{
             let gameViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameView") as! GameViewController
-            gameViewController.stageSelectController = self
+            //gameViewController.stageSelectController = self
             self.present(gameViewController, animated: true, completion: nil)
         }else{
             // Colocar um som de nao acesso

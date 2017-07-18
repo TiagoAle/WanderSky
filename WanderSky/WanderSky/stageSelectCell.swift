@@ -23,7 +23,6 @@ class stageSelectCell: UICollectionViewCell {
     
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         if self.isFocused{
-            self.stageImageBackground.adjustsImageWhenAncestorFocused = true
             //self.stageClouds.adjustsImageWhenAncestorFocused = true
             //self.stageGamePlay.adjustsImageWhenAncestorFocused = true
             self.stageClouds.isUserInteractionEnabled = true
@@ -35,7 +34,6 @@ class stageSelectCell: UICollectionViewCell {
             self.stageImageBackground.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             self.stageClouds.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             self.stageGamePlay.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-            self.stageImageBackground.adjustsImageWhenAncestorFocused = false
             //self.stageClouds.adjustsImageWhenAncestorFocused = false
             //self.stageGamePlay.adjustsImageWhenAncestorFocused = false
             self.stageClouds.motionEffects.removeAll()

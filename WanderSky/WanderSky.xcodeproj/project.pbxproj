@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A5931EB1E932362006FBB2E /* BLKCHCRY.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6A5931E91E92EE2B006FBB2E /* BLKCHCRY.TTF */; };
 		6AEF2B6C1E9288A500CE465E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B6B1E9288A500CE465E /* AppDelegate.swift */; };
 		6AEF2B6E1E9288A500CE465E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B6D1E9288A500CE465E /* GameScene.sks */; };
 		6AEF2B701E9288A500CE465E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B6F1E9288A500CE465E /* Actions.sks */; };
@@ -15,9 +16,35 @@
 		6AEF2B771E9288A500CE465E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B751E9288A500CE465E /* Main.storyboard */; };
 		6AEF2B791E9288A500CE465E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B781E9288A500CE465E /* Assets.xcassets */; };
 		6AEF2B7C1E9288A500CE465E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B7A1E9288A500CE465E /* LaunchScreen.storyboard */; };
+		6AEF2B841E92933400CE465E /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B831E92933400CE465E /* MenuController.swift */; };
+		6AEF2B9F1E92967500CE465E /* ArielNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B851E92967500CE465E /* ArielNode.swift */; };
+		6AEF2BA01E92967500CE465E /* CenterCollectionViewCellFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B861E92967500CE465E /* CenterCollectionViewCellFlowLayout.swift */; };
+		6AEF2BA11E92967500CE465E /* CommingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B871E92967500CE465E /* CommingSoonViewController.swift */; };
+		6AEF2BA21E92967500CE465E /* ContinueSoonScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B881E92967500CE465E /* ContinueSoonScene.sks */; };
+		6AEF2BA31E92967500CE465E /* ContinueSoonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B891E92967500CE465E /* ContinueSoonScene.swift */; };
+		6AEF2BA41E92967500CE465E /* crystal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B8A1E92967500CE465E /* crystal.mp3 */; };
+		6AEF2BA51E92967500CE465E /* crystalshoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B8B1E92967500CE465E /* crystalshoot.mp3 */; };
+		6AEF2BA61E92967500CE465E /* crystalsky.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B8C1E92967500CE465E /* crystalsky.mp3 */; };
+		6AEF2BA71E92967500CE465E /* game.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B8D1E92967500CE465E /* game.json */; };
+		6AEF2BA81E92967500CE465E /* GameLoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B8E1E92967500CE465E /* GameLoadManager.swift */; };
+		6AEF2BA91E92967500CE465E /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B8F1E92967500CE465E /* GameManager.swift */; };
+		6AEF2BAB1E92967500CE465E /* Glass.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B911E92967500CE465E /* Glass.sks */; };
+		6AEF2BAD1E92967500CE465E /* musicacristal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B931E92967500CE465E /* musicacristal.mp3 */; };
+		6AEF2BAE1E92967500CE465E /* MyParticle2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B941E92967500CE465E /* MyParticle2.sks */; };
+		6AEF2BAF1E92967500CE465E /* NodeObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B951E92967500CE465E /* NodeObstacle.swift */; };
+		6AEF2BB01E92967500CE465E /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B961E92967500CE465E /* Obstacle.swift */; };
+		6AEF2BB11E92967500CE465E /* Platform.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B971E92967500CE465E /* Platform.sks */; };
+		6AEF2BB21E92967500CE465E /* PlatformModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B981E92967500CE465E /* PlatformModel.swift */; };
+		6AEF2BB31E92967500CE465E /* PlatformNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B991E92967500CE465E /* PlatformNode.swift */; };
+		6AEF2BB41E92967500CE465E /* Shine.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF2B9A1E92967500CE465E /* Shine.sks */; };
+		6AEF2BB51E92967500CE465E /* stageSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B9B1E92967500CE465E /* stageSelectCell.swift */; };
+		6AEF2BB61E92967500CE465E /* StageSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B9C1E92967500CE465E /* StageSelectController.swift */; };
+		6AEF2BB71E92967500CE465E /* StoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B9D1E92967500CE465E /* StoneModel.swift */; };
+		6AEF2BB81E92967500CE465E /* StoneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF2B9E1E92967500CE465E /* StoneNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A5931E91E92EE2B006FBB2E /* BLKCHCRY.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BLKCHCRY.TTF; sourceTree = "<group>"; };
 		6AEF2B681E9288A500CE465E /* WanderSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEF2B6B1E9288A500CE465E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AEF2B6D1E9288A500CE465E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +55,31 @@
 		6AEF2B781E9288A500CE465E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AEF2B7B1E9288A500CE465E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AEF2B7D1E9288A500CE465E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AEF2B831E92933400CE465E /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		6AEF2B851E92967500CE465E /* ArielNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArielNode.swift; sourceTree = "<group>"; };
+		6AEF2B861E92967500CE465E /* CenterCollectionViewCellFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterCollectionViewCellFlowLayout.swift; sourceTree = "<group>"; };
+		6AEF2B871E92967500CE465E /* CommingSoonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommingSoonViewController.swift; sourceTree = "<group>"; };
+		6AEF2B881E92967500CE465E /* ContinueSoonScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ContinueSoonScene.sks; sourceTree = "<group>"; };
+		6AEF2B891E92967500CE465E /* ContinueSoonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueSoonScene.swift; sourceTree = "<group>"; };
+		6AEF2B8A1E92967500CE465E /* crystal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crystal.mp3; path = WanderSky/crystal.mp3; sourceTree = "<group>"; };
+		6AEF2B8B1E92967500CE465E /* crystalshoot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crystalshoot.mp3; path = WanderSky/crystalshoot.mp3; sourceTree = "<group>"; };
+		6AEF2B8C1E92967500CE465E /* crystalsky.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crystalsky.mp3; path = WanderSky/crystalsky.mp3; sourceTree = "<group>"; };
+		6AEF2B8D1E92967500CE465E /* game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = game.json; path = WanderSky/game.json; sourceTree = "<group>"; };
+		6AEF2B8E1E92967500CE465E /* GameLoadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLoadManager.swift; sourceTree = "<group>"; };
+		6AEF2B8F1E92967500CE465E /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		6AEF2B911E92967500CE465E /* Glass.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Glass.sks; sourceTree = "<group>"; };
+		6AEF2B931E92967500CE465E /* musicacristal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = musicacristal.mp3; path = WanderSky/musicacristal.mp3; sourceTree = "<group>"; };
+		6AEF2B941E92967500CE465E /* MyParticle2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle2.sks; sourceTree = "<group>"; };
+		6AEF2B951E92967500CE465E /* NodeObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeObstacle.swift; sourceTree = "<group>"; };
+		6AEF2B961E92967500CE465E /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		6AEF2B971E92967500CE465E /* Platform.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Platform.sks; sourceTree = "<group>"; };
+		6AEF2B981E92967500CE465E /* PlatformModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformModel.swift; sourceTree = "<group>"; };
+		6AEF2B991E92967500CE465E /* PlatformNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformNode.swift; sourceTree = "<group>"; };
+		6AEF2B9A1E92967500CE465E /* Shine.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Shine.sks; sourceTree = "<group>"; };
+		6AEF2B9B1E92967500CE465E /* stageSelectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stageSelectCell.swift; sourceTree = "<group>"; };
+		6AEF2B9C1E92967500CE465E /* StageSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageSelectController.swift; sourceTree = "<group>"; };
+		6AEF2B9D1E92967500CE465E /* StoneModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoneModel.swift; sourceTree = "<group>"; };
+		6AEF2B9E1E92967500CE465E /* StoneNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoneNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +96,12 @@
 		6AEF2B5F1E9288A500CE465E = {
 			isa = PBXGroup;
 			children = (
+				6A5931E91E92EE2B006FBB2E /* BLKCHCRY.TTF */,
+				6AEF2B8C1E92967500CE465E /* crystalsky.mp3 */,
+				6AEF2B8B1E92967500CE465E /* crystalshoot.mp3 */,
+				6AEF2B8A1E92967500CE465E /* crystal.mp3 */,
+				6AEF2B931E92967500CE465E /* musicacristal.mp3 */,
+				6AEF2B8D1E92967500CE465E /* game.json */,
 				6AEF2B6A1E9288A500CE465E /* WanderSky */,
 				6AEF2B691E9288A500CE465E /* Products */,
 			);
@@ -62,15 +120,99 @@
 			children = (
 				6AEF2B6B1E9288A500CE465E /* AppDelegate.swift */,
 				6AEF2B6D1E9288A500CE465E /* GameScene.sks */,
-				6AEF2B6F1E9288A500CE465E /* Actions.sks */,
-				6AEF2B711E9288A500CE465E /* GameScene.swift */,
-				6AEF2B731E9288A500CE465E /* GameViewController.swift */,
+				6AEF2BB91E9296A000CE465E /* Emitters */,
+				6AEF2BBA1E9296B100CE465E /* Controller */,
+				6AEF2BBB1E9296C200CE465E /* Node */,
+				6AEF2BBC1E9296CC00CE465E /* Manager */,
+				6AEF2BBD1E9296DA00CE465E /* Model */,
+				6AEF2BBE1E9296E300CE465E /* Scene */,
 				6AEF2B751E9288A500CE465E /* Main.storyboard */,
 				6AEF2B781E9288A500CE465E /* Assets.xcassets */,
 				6AEF2B7A1E9288A500CE465E /* LaunchScreen.storyboard */,
 				6AEF2B7D1E9288A500CE465E /* Info.plist */,
 			);
 			path = WanderSky;
+			sourceTree = "<group>";
+		};
+		6AEF2BB91E9296A000CE465E /* Emitters */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF2B911E92967500CE465E /* Glass.sks */,
+				6AEF2B9A1E92967500CE465E /* Shine.sks */,
+			);
+			name = Emitters;
+			sourceTree = "<group>";
+		};
+		6AEF2BBA1E9296B100CE465E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF2B731E9288A500CE465E /* GameViewController.swift */,
+				6AEF2B831E92933400CE465E /* MenuController.swift */,
+				6AEF2B871E92967500CE465E /* CommingSoonViewController.swift */,
+				6AEF2B9B1E92967500CE465E /* stageSelectCell.swift */,
+				6AEF2B9C1E92967500CE465E /* StageSelectController.swift */,
+				6AEF2B861E92967500CE465E /* CenterCollectionViewCellFlowLayout.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6AEF2BBB1E9296C200CE465E /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF2B851E92967500CE465E /* ArielNode.swift */,
+				6AEF2B991E92967500CE465E /* PlatformNode.swift */,
+				6AEF2B9E1E92967500CE465E /* StoneNode.swift */,
+				6AEF2B951E92967500CE465E /* NodeObstacle.swift */,
+			);
+			name = Node;
+			sourceTree = "<group>";
+		};
+		6AEF2BBC1E9296CC00CE465E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF2B8E1E92967500CE465E /* GameLoadManager.swift */,
+				6AEF2B8F1E92967500CE465E /* GameManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		6AEF2BBD1E9296DA00CE465E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF2B961E92967500CE465E /* Obstacle.swift */,
+				6AEF2B981E92967500CE465E /* PlatformModel.swift */,
+				6AEF2B9D1E92967500CE465E /* StoneModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6AEF2BBE1E9296E300CE465E /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF2BBF1E9297AC00CE465E /* View */,
+				6AEF2BC01E9297B300CE465E /* SKS */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		6AEF2BBF1E9297AC00CE465E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF2B891E92967500CE465E /* ContinueSoonScene.swift */,
+				6AEF2B711E9288A500CE465E /* GameScene.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6AEF2BC01E9297B300CE465E /* SKS */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF2B6F1E9288A500CE465E /* Actions.sks */,
+				6AEF2B881E92967500CE465E /* ContinueSoonScene.sks */,
+				6AEF2B941E92967500CE465E /* MyParticle2.sks */,
+				6AEF2B971E92967500CE465E /* Platform.sks */,
+			);
+			name = SKS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,11 +275,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEF2BB11E92967500CE465E /* Platform.sks in Resources */,
 				6AEF2B771E9288A500CE465E /* Main.storyboard in Resources */,
+				6AEF2BA41E92967500CE465E /* crystal.mp3 in Resources */,
 				6AEF2B6E1E9288A500CE465E /* GameScene.sks in Resources */,
 				6AEF2B791E9288A500CE465E /* Assets.xcassets in Resources */,
+				6AEF2BA61E92967500CE465E /* crystalsky.mp3 in Resources */,
 				6AEF2B7C1E9288A500CE465E /* LaunchScreen.storyboard in Resources */,
+				6AEF2BA51E92967500CE465E /* crystalshoot.mp3 in Resources */,
+				6AEF2BB41E92967500CE465E /* Shine.sks in Resources */,
+				6AEF2BA21E92967500CE465E /* ContinueSoonScene.sks in Resources */,
+				6A5931EB1E932362006FBB2E /* BLKCHCRY.TTF in Resources */,
 				6AEF2B701E9288A500CE465E /* Actions.sks in Resources */,
+				6AEF2BAE1E92967500CE465E /* MyParticle2.sks in Resources */,
+				6AEF2BAB1E92967500CE465E /* Glass.sks in Resources */,
+				6AEF2BA71E92967500CE465E /* game.json in Resources */,
+				6AEF2BAD1E92967500CE465E /* musicacristal.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +301,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEF2BB01E92967500CE465E /* Obstacle.swift in Sources */,
+				6AEF2BB21E92967500CE465E /* PlatformModel.swift in Sources */,
+				6AEF2B841E92933400CE465E /* MenuController.swift in Sources */,
+				6AEF2BA11E92967500CE465E /* CommingSoonViewController.swift in Sources */,
+				6AEF2BB61E92967500CE465E /* StageSelectController.swift in Sources */,
 				6AEF2B721E9288A500CE465E /* GameScene.swift in Sources */,
+				6AEF2BB71E92967500CE465E /* StoneModel.swift in Sources */,
 				6AEF2B741E9288A500CE465E /* GameViewController.swift in Sources */,
+				6AEF2BB51E92967500CE465E /* stageSelectCell.swift in Sources */,
+				6AEF2BA81E92967500CE465E /* GameLoadManager.swift in Sources */,
+				6AEF2BB31E92967500CE465E /* PlatformNode.swift in Sources */,
+				6AEF2BB81E92967500CE465E /* StoneNode.swift in Sources */,
+				6AEF2BA31E92967500CE465E /* ContinueSoonScene.swift in Sources */,
+				6AEF2B9F1E92967500CE465E /* ArielNode.swift in Sources */,
 				6AEF2B6C1E9288A500CE465E /* AppDelegate.swift in Sources */,
+				6AEF2BA01E92967500CE465E /* CenterCollectionViewCellFlowLayout.swift in Sources */,
+				6AEF2BA91E92967500CE465E /* GameManager.swift in Sources */,
+				6AEF2BAF1E92967500CE465E /* NodeObstacle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +482,7 @@
 				6AEF2B821E9288A500CE465E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -46,12 +46,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
         // Tap
         let tap = UITapGestureRecognizer(target: self, action: #selector(GameScene.handleTap(_:)))
-        tap.allowedPressTypes = [NSNumber(value: UIPressType.select.rawValue)]
         self.view!.addGestureRecognizer(tap)
         
-        let menu = UITapGestureRecognizer(target: self, action: #selector(GameScene.pauseGame(_:)))
-        menu.allowedPressTypes = [NSNumber(value: UIPressType.menu.rawValue)]
-        self.view!.addGestureRecognizer(menu)
+        //let menu = UITapGestureRecognizer(target: self, action: #selector(GameScene.pauseGame(_:)))
+        //menu.allowedPressTypes = [NSNumber(value: UIPressType.menu.rawValue)]
+        //self.view!.addGestureRecognizer(menu)
         
         // Swipe
         let swipeGestureRight = UISwipeGestureRecognizer(target: self, action: #selector(GameScene.handleSwipe(_:)))
@@ -102,7 +101,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func pauseGame(_ gesture: UIGestureRecognizer){
-        gameManager?.showPopUp(withStatus: 2)
+//        gameManager?.showPopUp(withStatus: 2)
     }
     
     

@@ -91,7 +91,8 @@ class MenuController: UIViewController {
   
     
     @IBAction func stageAction(_ sender: Any) {
-        
+        let stageSelectController = self.storyboard?.instantiateViewController(withIdentifier: "StageSelect") as! StageSelectController
+        self.present(stageSelectController, animated: true, completion: nil)
     }
     
     @IBAction func optionsAction(_ sender: UIButton) {
@@ -190,19 +191,13 @@ class MenuController: UIViewController {
         
         return (json?.count)!
     }
-//
-//    func setInicialStars(){
-//        for i in 0...countPhases(){
-//            UserDefaults.standard.set(0, forKey: "idPhase\(i)")
-//        }
-//    }
     
     func setInitialStars() {
         var dict  = [String:Int]()
         for i in 0...countPhases(){
             dict["fase\(i)"] = 0
         }
-        //GameLoadManager.writeFile(json: dict)
+        GameLoadManager.writeFile(json: dict)
     }
     
 }
