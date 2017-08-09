@@ -118,5 +118,14 @@ class StageSelectController: UICollectionViewController{
             // Colocar um som de nao acesso
         }
     }
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if let cells = collectionView?.visibleCells as? [stageSelectCell] {
+            for pCell in cells {
+                let xOffset = (((collectionView?.contentOffset.x)! - pCell.frame.origin.x) / pCell.stageImageBackground.frame.width) * 20.0
+                print(pCell.frame.origin.y)
+                pCell.offset(offset: CGPoint(x: xOffset, y: pCell.stageImageBackground.frame.origin.y))
+            }
+        }
+    }
 
 }

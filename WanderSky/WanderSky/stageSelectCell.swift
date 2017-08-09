@@ -40,6 +40,10 @@ class stageSelectCell: UICollectionViewCell {
             self.stageGamePlay.motionEffects.removeAll()
         }
     }
+    
+    func offset(offset: CGPoint) {
+        stageImageBackground.frame = self.stageImageBackground.bounds.offsetBy(dx: offset.x, dy: offset.y)
+    }
 
     func getParallax(){
         // Set vertical effect
