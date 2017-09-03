@@ -216,7 +216,7 @@ class GameManager : NSObject{
                 self.saveStars()
                 MenuController.savehigherStageInUserDefault(stage: self.actualPhase+1)
                 
-                //gameScene?.run(SKAction.sequence([SKAction.run{self.stopCrystal()},SKAction.wait(forDuration: 3),SKAction.run{self.showPopUp(withStatus: 3)}]))
+                gameScene?.run(SKAction.sequence([SKAction.run{self.stopCrystal()},SKAction.wait(forDuration: 3),SKAction.run{self.showPopUp(withStatus: 3)}]))
 
             }
             endCrystal += 1
@@ -382,34 +382,35 @@ class GameManager : NSObject{
     }
     
 
-//    func showPopUp(withStatus status: Int){
-//        if diferentPopUp == false{
-//            if status != 2{
-//                diferentPopUp = true
-//            }
-//            if ((gameScene?.isPaused)! == false){
-//                gameScene?.isPaused = true
-//                let popUp = PopUpview.instanceFromNib() as! PopUpview
-//                popUp.statusPopUp(withStatus: status)
-//                //popUp.nextLevel.isEnabled = false
-//                popUp.tag = 10
-//                popUp.transform = popUp.transform.scaledBy(x: 0.1, y: 0.1)
-//                UIView.animate(withDuration: 0.5, animations: {
-//                    popUp.transform = popUp.transform.scaledBy(x: 10, y: 10)
-//                })
-//                gameScene?.view?.addSubview(popUp)
-//            }else{
-//                gameScene?.isPaused = false
-//                gameScene?.view?.viewWithTag(10)?.removeFromSuperview()
-//            }
-//            
-//        }
-//        
-//
-//    }
+    func showPopUp(withStatus status: Int){
+        if diferentPopUp == false{
+            if status != 2{
+                diferentPopUp = true
+            }
+            if ((gameScene?.isPaused)! == false){
+                gameScene?.isPaused = true
+                let popUp = PopUpview.instanceFromNib() as! PopUpview
+                popUp.frame.size = UIScreen.main.bounds.size
+                popUp.statusPopUp(withStatus: status)
+                //popUp.nextLevel.isEnabled = false
+                popUp.tag = 10
+                popUp.transform = popUp.transform.scaledBy(x: 0.1, y: 0.1)
+                UIView.animate(withDuration: 0.5, animations: {
+                    popUp.transform = popUp.transform.scaledBy(x: 10, y: 10)
+                })
+                gameScene?.view?.addSubview(popUp)
+            }else{
+                gameScene?.isPaused = false
+                gameScene?.view?.viewWithTag(10)?.removeFromSuperview()
+            }
+            
+        }
+        
+
+    }
     
     func endGame(){
-//        self.showPopUp(withStatus: 1)
+        self.showPopUp(withStatus: 1)
     }
     
     func setBackground(){

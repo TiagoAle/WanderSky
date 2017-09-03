@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zUw-so-Kye">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zUw-so-Kye">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -66,7 +66,7 @@
                                     <constraint firstAttribute="width" constant="118" id="P5g-rT-Qvv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BlackChancery" family="BlackChancery" pointSize="17"/>
-                                <state key="normal" title="New Game">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -192,6 +192,23 @@
                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="066-xT-fNZ">
                                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1H-hG-LD7">
+                                                <rect key="frame" x="8" y="0.0" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="c63-9K-Utv"/>
+                                                    <constraint firstAttribute="width" constant="45" id="vwj-ZD-q5M"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="BTNHome"/>
+                                                <connections>
+                                                    <action selector="backHome:" destination="Dsq-EX-8HT" eventType="touchUpInside" id="AmO-Xv-S0t"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="u1H-hG-LD7" firstAttribute="leading" secondItem="066-xT-fNZ" secondAttribute="leading" constant="8" id="5Wb-2O-IqL"/>
+                                            <constraint firstItem="u1H-hG-LD7" firstAttribute="top" secondItem="066-xT-fNZ" secondAttribute="top" id="ogh-n1-Ss5"/>
+                                        </constraints>
                                     </view>
                                     <blurEffect style="light"/>
                                 </visualEffectView>
@@ -303,7 +320,25 @@
                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </collectionViewFlowLayout>
             </objects>
-            <point key="canvasLocation" x="671.51424287856082" y="-610.39999999999998"/>
+            <point key="canvasLocation" x="672.41379310344837" y="-610.39999999999998"/>
+        </scene>
+        <!--Comming Soon View Controller-->
+        <scene sceneID="CnW-S0-Bbe">
+            <objects>
+                <viewController id="ndi-Gj-Lir" customClass="CommingSoonViewController" customModule="WanderSky" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RFL-h6-R00"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bn8-Zk-80Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ABJ-rz-7ZQ" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPB-F5-rS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="65"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -318,6 +353,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="ndi-Gj-Lir" kind="show" identifier="segueGame" id="f3b-4h-ta5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
@@ -329,6 +367,7 @@
         <image name="BGMenu" width="1570" height="1080"/>
         <image name="BGMenuPrincipal" width="1920" height="1080"/>
         <image name="BGRounded05" width="1920" height="1080"/>
+        <image name="BTNHome" width="204" height="204"/>
         <image name="Cloud" width="910" height="381"/>
         <image name="Padlock" width="186" height="226"/>
         <image name="Simulator Screen Shot 28 de fev de 2017 17.13.28" width="960" height="540"/>

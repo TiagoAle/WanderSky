@@ -53,10 +53,6 @@ class MenuController: UIViewController {
             audioPlayer.play()
         }
         
-        let stage = MenuController.loadPlayerStageInNSUserDefault()
-        if stage == 0 {
-            newGameButton.setTitle("New Game", for: .normal)
-        }
         let initialStage = MenuController.loadHigherStageInNSUserDefault()
         if initialStage == 0{
             setInitialStars()
@@ -81,6 +77,13 @@ class MenuController: UIViewController {
 //            soundButton.setBackgroundImage(UIImage(named:"BTNSoundDisabled"), for: .normal)
 //        }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let stage = MenuController.loadPlayerStageInNSUserDefault()
+        if stage == 0 {
+            newGameButton.setTitle("New Game", for: .normal)
+        }
     }
     
     @IBAction func continueAct(_ sender: Any) {

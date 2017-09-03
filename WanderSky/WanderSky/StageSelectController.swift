@@ -34,16 +34,19 @@ class StageSelectController: UICollectionViewController{
 //        
 //        self.collectionView?.backgroundView = imageMenu
         self.stars = GameLoadManager.readJsonStars()
-        
-        //let indexPath = IndexPath.init(item: MenuController.loadPlayerStageInNSUserDefault()+1, section: 0)
+        //print(MenuController.loadPlayerStageInNSUserDefault()+1)
+       // let indexPath = IndexPath.init(item: MenuController.loadPlayerStageInNSUserDefault(), section: 0)
         //self.collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
     }
     
+    @IBAction func backHome(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let length = self.collectionView?.numberOfItems(inSection: 0)
-        if (MenuController.loadPlayerStageInNSUserDefault()+1 < length!){
-            let indexPath = IndexPath.init(item: MenuController.loadPlayerStageInNSUserDefault()+1, section: 0)
+        if (MenuController.loadPlayerStageInNSUserDefault() < length!){
+            let indexPath = IndexPath.init(item: MenuController.loadPlayerStageInNSUserDefault(), section: 0)
             self.collectionView!.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
         }else{
             let indexPath = IndexPath.init(item: length!-1, section: 0)
@@ -118,14 +121,14 @@ class StageSelectController: UICollectionViewController{
             // Colocar um som de nao acesso
         }
     }
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if let cells = collectionView?.visibleCells as? [stageSelectCell] {
-            for pCell in cells {
-                let xOffset = (((collectionView?.contentOffset.x)! - pCell.frame.origin.x) / pCell.stageImageBackground.frame.width) * 20.0
-                print(pCell.frame.origin.y)
-                pCell.offset(offset: CGPoint(x: xOffset, y: pCell.stageImageBackground.frame.origin.y))
-            }
-        }
-    }
+//    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        if let cells = collectionView?.visibleCells as? [stageSelectCell] {
+//            for pCell in cells {
+//                let xOffset = (((collectionView?.contentOffset.x)! - pCell.frame.origin.x) / pCell.stageImageBackground.frame.width) * 20.0
+//                print(pCell.frame.origin.y)
+//                pCell.offset(offset: CGPoint(x: xOffset, y: pCell.stageImageBackground.frame.origin.y))
+//            }
+//        }
+//    }
 
 }
