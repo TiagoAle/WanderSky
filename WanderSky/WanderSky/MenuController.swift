@@ -14,12 +14,13 @@ import UIKit
 class MenuController: UIViewController {
 
     @IBOutlet weak var newGameButton: UIButton!
-    //@IBOutlet weak var optinsView: UIView!
-    //@IBOutlet weak var soundButton: UIButton!
-    //@IBOutlet weak var musicButton: UIButton!
+    @IBOutlet weak var optinsView: UIView!
+    @IBOutlet weak var soundButton: UIButton!
+    @IBOutlet weak var musicButton: UIButton!
     @IBOutlet weak var optionButton: UIButton!
     @IBOutlet weak var stageSelect: UIButton!
     //@IBOutlet weak var continueFocus: UIImageView!
+    @IBOutlet weak var backMenu: UIButton!
     
     var audioPlayer = AVAudioPlayer()
     static var menuController: MenuController?
@@ -59,23 +60,23 @@ class MenuController: UIViewController {
         }
         
         //Aplicando a funcao de clicar no menu para sair do mune de options
-        let tap = UITapGestureRecognizer(target: self, action: #selector(hiddenOptionMenu))
-        tap.allowedPressTypes = [NSNumber(value: UIPressType.menu.rawValue)]
-        //self.optinsView.addGestureRecognizer(tap)
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(hiddenOptionMenu))
+//        tap.allowedPressTypes = [NSNumber(value: UIPressType.menu.rawValue)]
+//        self.optinsView.addGestureRecognizer(tap)
         
         
-//        if (MenuController.loadPlayerMusicPreference()){
-//            musicButton.setBackgroundImage(UIImage(named:"BTNMusic"), for: .normal)
-//        }else{
-//            musicButton.setBackgroundImage(UIImage(named:"BTNMusicDisabled"), for: .normal)
-//        }
-//        
-//        
-//        if (MenuController.loadPlayerSoundPreference()){
-//            soundButton.setBackgroundImage(UIImage(named:"BTNSound"), for: .normal)
-//        }else{
-//            soundButton.setBackgroundImage(UIImage(named:"BTNSoundDisabled"), for: .normal)
-//        }
+        if (MenuController.loadPlayerMusicPreference()){
+            musicButton.setBackgroundImage(UIImage(named:"BTNMusic"), for: .normal)
+        }else{
+            musicButton.setBackgroundImage(UIImage(named:"BTNMusicDisabled"), for: .normal)
+        }
+        
+        
+        if (MenuController.loadPlayerSoundPreference()){
+            soundButton.setBackgroundImage(UIImage(named:"BTNSound"), for: .normal)
+        }else{
+            soundButton.setBackgroundImage(UIImage(named:"BTNSoundDisabled"), for: .normal)
+        }
         
     }
     
@@ -99,38 +100,39 @@ class MenuController: UIViewController {
     }
     
     @IBAction func optionsAction(_ sender: UIButton) {
-        //self.optinsView.isHidden = false
-    }
-
-    func hiddenOptionMenu() {
-        //self.optinsView.isHidden = true
+        self.optinsView.isHidden = false
+        self.backMenu.isHidden = false
     }
     
+    @IBAction func goBackMenu(_ sender: Any) {
+        self.optinsView.isHidden = true
+        self.backMenu.isHidden = true
+    }
     
-//    @IBAction func soundAction(_ sender: UIButton) {
-//        let preference = MenuController.loadPlayerSoundPreference()
-//        MenuController.savePlayerSoundPreference(stage: !preference)
-//        if (!preference){
-//            soundButton.setBackgroundImage(UIImage(named:"BTNSound"), for: .normal)
-//        }else{
-//            soundButton.setBackgroundImage(UIImage(named:"BTNSoundDisabled"), for: .normal)
-//        }
-//    }
+    @IBAction func soundAction(_ sender: UIButton) {
+        let preference = MenuController.loadPlayerSoundPreference()
+        MenuController.savePlayerSoundPreference(stage: !preference)
+        if (!preference){
+            soundButton.setBackgroundImage(UIImage(named:"BTNSound"), for: .normal)
+        }else{
+            soundButton.setBackgroundImage(UIImage(named:"BTNSoundDisabled"), for: .normal)
+        }
+    }
     
     
-//    @IBAction func musicAction(_ sender: UIButton) {
-//        let musicPreference = MenuController.loadPlayerMusicPreference()
-//        MenuController.savePlayerMusicPreference(stage: !musicPreference)
-//        if (!musicPreference){
-//            musicButton.setBackgroundImage(UIImage(named:"BTNMusic"), for: .normal)
-//            audioPlayer.prepareToPlay()
-//            audioPlayer.numberOfLoops = -1
-//            audioPlayer.play()
-//        }else{
-//            musicButton.setBackgroundImage(UIImage(named:"BTNMusicDisabled"), for: .normal)
-//            audioPlayer.pause()
-//        }
-//    }
+    @IBAction func musicAction(_ sender: UIButton) {
+        let musicPreference = MenuController.loadPlayerMusicPreference()
+        MenuController.savePlayerMusicPreference(stage: !musicPreference)
+        if (!musicPreference){
+            musicButton.setBackgroundImage(UIImage(named:"BTNMusic"), for: .normal)
+            audioPlayer.prepareToPlay()
+            audioPlayer.numberOfLoops = -1
+            audioPlayer.play()
+        }else{
+            musicButton.setBackgroundImage(UIImage(named:"BTNMusicDisabled"), for: .normal)
+            audioPlayer.pause()
+        }
+    }
     
     
     // Salvar a fase atual que o jogador esta jogando
